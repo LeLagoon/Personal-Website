@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Jai Dugal</title>
+    <link rel="icon" type="image/x-icon" href="favicon logo J.png">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <a href="home.html" class="home" style="background-color: white;
+    color: black;
+    border-radius: 30px;">Home</a>
+    <a href="About.html" class="about">About Me</a>
+    <a href="projects.html" class="proj">Projects</a>
+    <a href="https://twitter.com/lagoon_le"><img src="social-icons/twitter.png" alt="twitter" class="twitter"></a>
+    <a href="https://www.artstation.com/lelagoon"><img src="social-icons/artstation.png" alt="artstation" class="artstation"></a>
+    <a href="https://open.spotify.com/user/coglw7mqbo772v922wscvkj6b?si=0853b72388524cfa"><img src="social-icons/spotify.png" alt="spotify" class="spotify"></a>
+    <a href="https://www.github.com/LeLagoon"><img src="social-icons/github.png" alt="github" class="github"></a>
+    <a href="https://www.instagram.com/jai_dugal/"><img src="social-icons/insta.png" alt="instagram" class="instagram"></a>
+    <a href="mailto:jaidugal123@gmail.com"><img src="social-icons/mail.png" alt="mail" class="mail"></a>
+    <a href="https://www.behance.net/jaidugal1"><img src="social-icons/behance.png" alt="behance" class="behance"></a>
+    <p>Hello!</p>
+<div class="container">
+  <h1>I am <span class="auto-type"></span></h1>
+</div>
+<div class="box">
+  <div class="content">
+    <img src="meowmeow.jpg" alt="My Photo" draggable="false">
+  </div>
+</div>
+    <div id="tsparticles"></div>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script type="text/javascript">
+      const options = {
+        background: {
+          color: "#000",
+        },
+        interactivity: {
+          events: {
+            onClick: {
+              enable: true,
+              mode: "push",
+            },
+            onHover: {
+              enable: true,
+              mode: "repulse",
+            },
+          },
+          modes: {
+            push: {
+              quantity: 6,
+            },
+            repulse: {
+              distance: 100,
+            },
+          },
+        },
+        particles:
+ {
+          links: {
+            enable: true,
+            opacity: 0.3,
+            distance: 200,
+          },
+          move: {
+            enable: true,
+            speed: { min: 1, max: 3 },
+          },
+          opacity: {
+            value: { min: 0.3, max: 0.7 },
+          },
+          size: {
+            value: { min: 1, max: 3 },
+          },
+        },
+      };
+
+      tsParticles.load("tsparticles", options);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: ["Jai Dugal", "a Designer", "a Crypter"],
+        typeSpeed: 150,
+        backSpeed: 100,
+        loop: true
+      })
+    </script>
+  </body>
+</html>

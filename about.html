@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me | Jai Dugal</title>
+    <link rel="icon" type="image/x-icon" href="favicon logo J.png">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <a href="home.html" class="home">Home</a>
+    <a href="About.html" class="about" style="background-color: white;
+    color: black;
+    border-radius: 30px;">About Me</a>
+    <a href="projects.html" class="proj">Projects</a>
+    <p class="aboutcontent">After a group of people who meet online discover a bizarre graphic novel which seems to hold mysterious answers and predictions to events both past and present, they find themselves being tracked down but a merciless organisation known merely as 'The Network'.</p>
+    <div id="tsparticles"></div>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script type="text/javascript">
+      const options = {
+        background: {
+          color: "#000",
+        },
+        interactivity: {
+          events: {
+            onClick: {
+              enable: true,
+              mode: "push",
+            },
+            onHover: {
+              enable: true,
+              mode: "repulse",
+            },
+          },
+          modes: {
+            push: {
+              quantity: 6,
+            },
+            repulse: {
+              distance: 100,
+            },
+          },
+        },
+        particles:
+ {
+          links: {
+            enable: true,
+            opacity: 0.3,
+            distance: 200,
+          },
+          move: {
+            enable: true,
+            speed: { min: 1, max: 3 },
+          },
+          opacity: {
+            value: { min: 0.3, max: 0.7 },
+          },
+          size: {
+            value: { min: 1, max: 3 },
+          },
+        },
+      };
+
+      tsParticles.load("tsparticles", options);
+    </script>
+  </body>
+</html>
